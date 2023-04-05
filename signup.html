@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+            
+        }
+        body{
+           
+           background-image: url("logo/bg.jpg"); 
+           background-size:cover;
+           background-repeat: no-repeat;
+    
+        }
+        #form{
+        margin-top: 100px;
+        margin-left: 35%;
+        border: 3px solid rgb(247, 244, 244);
+        box-sizing: border-box;
+        width: 30%;
+        height: 30rem;
+        background: rgba(10, 10, 10, 0.8);
+        border-radius: 5px;
+        box-shadow:0 0 20px 2px rgba(241, 238, 238, 0.8);
+        
+        }
+        .first-name{
+            width: 200px;
+            height: 20px;
+            padding: 12px 20px;
+            border: none;
+            margin-top: 15px;
+            border-radius: 3px;
+        }
+        .last-name{
+            width: 200px;
+            height: 20px;
+            padding: 12px 20px;
+            border: none;
+            margin-top: 15px;
+            border-radius: 3px;
+        }
+        .email{
+            width: 200px;
+            height: 20px;
+            padding: 12px 20px;
+            border: none;
+            margin-top: 15px;
+            margin-left: 40px;
+            border-radius: 3px;
+        }
+        label{
+            color: rgb(236, 236, 246);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: medium;
+            margin-left: -10px;
+        }
+        .pass{
+            width: 200px;
+            height: 20px;
+            padding: 12px 20px;
+            border: none;
+            margin-top: 15px;
+            border-radius: 3px;
+            margin-left: 8px;
+            
+            
+        }
+        .pass1{
+            width: 200px;
+            height: 20px;
+            padding: 12px 20px;
+            border: none;
+            margin-top: 15px;
+            border-radius: 3px;
+            margin-right: 45px;
+        }
+        button{
+            padding: 10px;
+            width: 90px;
+            background-color: rgb(0, 225, 255);
+            border: none;
+            border-radius: 5px;
+            margin-left: 205px;
+            margin-top: 10px;
+        }
+        h3{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: aliceblue;
+            margin-top: 5px;
+        }
+        i{
+        
+            color: rgb(53, 188, 188);
+            margin-top: 20px;
+        }
+        </style>
+    
+   <Form id="form" method="POST"
+   action="data.php">
+   <center><h3>Sign up</h3></center> 
+    <center> <i class="fa-solid fa-user fa-5x"></i></Center>
+        <Center><label >First Name </label>
+    <input type="text" name="fname" class="first-name" placeholder="First name" required>
+    <Center><label >Last Name </label>
+        <input type="text"  name="lname"class="last-name"placeholder="Last name" required>
+   </center><center><label >Email</label><input type="email"  name="email" class="email" placeholder="Enter your email" required></center>
+    <center><label >Password</label>
+    <input type="text"   name="pass" class="pass" placeholder=" Enter password" required></center>
+     <label >Confirm Password</label><input type="text" name="cpass" class="pass1" placeholder=" Enter confirm password" required></center>
+    <button type="submit" id="log">Sign up</button>
+    
+</Form>
+</body>
+</html>
